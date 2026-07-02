@@ -16,3 +16,4 @@
 - Add error handling to Login
 - Implement loading states
 - Refactor App routing state
+- Update color palette for dark mode
