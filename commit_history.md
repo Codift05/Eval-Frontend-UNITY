@@ -26,3 +26,4 @@
 - Refactor Dashboard into smaller components
 - Update unique codes for students
 - Enhance Leaderboard table UI
+- Final polish: Minimalist modern redesign
