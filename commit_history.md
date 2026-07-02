@@ -1,0 +1,1 @@
+- Initialize React project with Vite
