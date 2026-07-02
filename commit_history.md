@@ -20,3 +20,4 @@
 - Clean up CSS and unused classes
 - Refine ScoreBar visuals
 - Update student evaluation data
+- Fix text overflow in feedback section
