@@ -5,3 +5,4 @@
 - Add Lucide React icons
 - Implement glassmorphism UI components
 - Create Dashboard layout
+- Design ScoreBar component
