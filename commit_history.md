@@ -25,3 +25,4 @@
 - Optimize font loading
 - Refactor Dashboard into smaller components
 - Update unique codes for students
+- Enhance Leaderboard table UI
