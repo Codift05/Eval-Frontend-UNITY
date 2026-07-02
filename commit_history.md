@@ -11,3 +11,4 @@
 - Add animations and transitions
 - Setup Leaderboard component
 - Implement Leaderboard sorting logic
+- Refine responsive design for mobile
