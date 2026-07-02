@@ -1,3 +1,4 @@
 - Initialize React project with Vite
 - Setup basic project structure
 - Configure CSS variables for theming
+- Create Login page layout
