@@ -1,1 +1,2 @@
 - Initialize React project with Vite
+- Setup basic project structure
