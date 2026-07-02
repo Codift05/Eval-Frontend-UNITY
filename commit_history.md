@@ -9,3 +9,4 @@
 - Implement mock data structure
 - Integrate mock data with Dashboard
 - Add animations and transitions
+- Setup Leaderboard component
