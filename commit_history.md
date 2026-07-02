@@ -15,3 +15,4 @@
 - Improve typography and spacing
 - Add error handling to Login
 - Implement loading states
+- Refactor App routing state
