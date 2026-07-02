@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', width: '100%' }}>
+    <div style={{ minHeight: '100dvh', width: '100%' }}>
       {currentView === 'login' && <Login onLogin={handleLogin} />}
       
       {currentView === 'dashboard' && currentUser && (

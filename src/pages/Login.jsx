@@ -36,7 +36,7 @@ export default function Login({ onLogin }) {
   };
 
   return (
-    <div className="animate-fade-in-up" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
+    <div className="animate-fade-in-up" style={{ minHeight: '100dvh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', boxSizing: 'border-box' }}>
       <div className="glass-panel" style={{ padding: '3rem', maxWidth: '400px', width: '100%', textAlign: 'center' }}>
         <h1 style={{ marginBottom: '0.5rem', fontSize: '1.75rem' }}>Portal Penilaian</h1>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
@@ -49,10 +49,11 @@ export default function Login({ onLogin }) {
             <input 
               id="code"
               type="text" 
-              placeholder="Contoh: DANILL" 
+              placeholder="Contoh: DANILL-8XF2" 
               value={code}
               onChange={(e) => setCode(e.target.value)}
               disabled={loading}
+              style={{ fontSize: '16px' }} 
             />
             {error && <span style={{ color: 'var(--danger)', fontSize: '0.875rem' }}>{error}</span>}
           </div>

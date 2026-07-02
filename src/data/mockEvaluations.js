@@ -1,7 +1,7 @@
 export const mockEvaluations = [
   {
     id: "uuid-1",
-    unique_code: "DANILL",
+    unique_code: "DANILL-8XF2",
     student_name: "Danill Henry Sumolang",
     project_name: "Web Portofolio & Sistem Akademik TI",
     score_ui_ux: 78,
@@ -14,7 +14,7 @@ export const mockEvaluations = [
   },
   {
     id: "uuid-2",
-    unique_code: "IMANUEL",
+    unique_code: "IMANUEL-9K3A",
     student_name: "Imanuel Patandean",
     project_name: "Web Portofolio & Sistem Akademik TI",
     score_ui_ux: 95,
@@ -27,7 +27,7 @@ export const mockEvaluations = [
   },
   {
     id: "uuid-3",
-    unique_code: "MICHELLE",
+    unique_code: "MICHELLE-2L9P",
     student_name: "Michelle Maria Michiko Sumuweng",
     project_name: "Web Portofolio & Sistem Akademik TI",
     score_ui_ux: 88,
@@ -40,7 +40,7 @@ export const mockEvaluations = [
   },
   {
     id: "uuid-4",
-    unique_code: "SANCIA",
+    unique_code: "SANCIA-7R4W",
     student_name: "Sancia Alicia Taligangsing",
     project_name: "Web Portofolio & Sistem Akademik TI",
     score_ui_ux: 75,
@@ -53,7 +53,7 @@ export const mockEvaluations = [
   },
   {
     id: "uuid-5",
-    unique_code: "YEDIDA",
+    unique_code: "YEDIDA-5T1V",
     student_name: "Yedida Abigail Sabaru",
     project_name: "Web Portofolio & Sistem Akademik TI",
     score_ui_ux: 98,
