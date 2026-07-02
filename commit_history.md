@@ -10,3 +10,4 @@
 - Integrate mock data with Dashboard
 - Add animations and transitions
 - Setup Leaderboard component
+- Implement Leaderboard sorting logic
