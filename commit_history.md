@@ -18,3 +18,4 @@
 - Refactor App routing state
 - Update color palette for dark mode
 - Clean up CSS and unused classes
+- Refine ScoreBar visuals
