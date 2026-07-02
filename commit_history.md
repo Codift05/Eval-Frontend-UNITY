@@ -6,3 +6,4 @@
 - Implement glassmorphism UI components
 - Create Dashboard layout
 - Design ScoreBar component
+- Implement mock data structure
