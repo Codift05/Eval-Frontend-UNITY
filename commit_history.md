@@ -13,3 +13,4 @@
 - Implement Leaderboard sorting logic
 - Refine responsive design for mobile
 - Improve typography and spacing
+- Add error handling to Login
