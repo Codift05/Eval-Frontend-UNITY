@@ -8,3 +8,4 @@
 - Design ScoreBar component
 - Implement mock data structure
 - Integrate mock data with Dashboard
+- Add animations and transitions
