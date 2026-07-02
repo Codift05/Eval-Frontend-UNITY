@@ -22,3 +22,4 @@
 - Update student evaluation data
 - Fix text overflow in feedback section
 - Adjust glass panel borders and shadows
+- Optimize font loading
