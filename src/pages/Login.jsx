@@ -17,7 +17,7 @@ export default function Login({ onLogin }) {
     try {
       // Simulate network delay
       await new Promise(resolve => setTimeout(resolve, 500));
-      
+
       const data = mockEvaluations.find(
         (evaluation) => evaluation.unique_code.toLowerCase() === code.toLowerCase()
       );
@@ -46,14 +46,14 @@ export default function Login({ onLogin }) {
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', textAlign: 'left' }}>
             <label htmlFor="code" style={{ fontSize: '0.875rem', fontWeight: 500 }}>Kode Unik</label>
-            <input 
+            <input
               id="code"
-              type="text" 
-              placeholder="Contoh: DANILL-8XF2" 
+              type="text"
+              placeholder="KODE UNIK"
               value={code}
               onChange={(e) => setCode(e.target.value)}
               disabled={loading}
-              style={{ fontSize: '16px' }} 
+              style={{ fontSize: '16px' }}
             />
             {error && <span style={{ color: 'var(--danger)', fontSize: '0.875rem' }}>{error}</span>}
           </div>

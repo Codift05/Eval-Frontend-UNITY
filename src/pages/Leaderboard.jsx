@@ -45,47 +45,44 @@ export default function Leaderboard({ onBack }) {
             <Loader2 size={48} color="var(--accent-color)" style={{ animation: 'spin 1s linear infinite' }} />
           </div>
         ) : (
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '600px' }}>
-              <thead>
-                <tr style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid var(--glass-border)' }}>
-                  <th style={{ padding: '1.5rem', fontWeight: 600 }}>Rank</th>
-                  <th style={{ padding: '1.5rem', fontWeight: 600 }}>Peserta</th>
-                  <th style={{ padding: '1.5rem', fontWeight: 600 }}>Proyek</th>
-                  <th style={{ padding: '1.5rem', fontWeight: 600, textAlign: 'right' }}>Total Skor</th>
-                </tr>
-              </thead>
-              <tbody>
-                {leaderboardData.map((student, index) => (
-                  <tr 
-                    key={student.id} 
-                    style={{ 
-                      borderBottom: '1px solid var(--glass-border)',
-                      background: index === 0 ? 'rgba(245, 158, 11, 0.1)' : 'transparent',
-                      transition: 'background 0.3s ease'
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
-                    onMouseLeave={(e) => e.currentTarget.style.background = index === 0 ? 'rgba(245, 158, 11, 0.1)' : 'transparent'}
-                  >
-                    <td style={{ padding: '1.25rem 1.5rem' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                        {index === 0 && <Medal size={24} color="var(--warning)" />}
-                        {index === 1 && <Medal size={24} color="#9ca3af" />}
-                        {index === 2 && <Medal size={24} color="#b45309" />}
-                        <span style={{ fontWeight: index < 3 ? 700 : 500, color: index < 3 ? 'var(--text-primary)' : 'var(--text-secondary)', fontSize: '1.1rem' }}>
-                          #{index + 1}
-                        </span>
-                      </div>
-                    </td>
-                    <td style={{ padding: '1.25rem 1.5rem', fontWeight: 500, fontSize: '1.1rem' }}>{student.student_name}</td>
-                    <td style={{ padding: '1.25rem 1.5rem', color: 'var(--text-secondary)' }}>{student.project_name}</td>
-                    <td style={{ padding: '1.25rem 1.5rem', textAlign: 'right', fontWeight: 700, fontSize: '1.25rem', color: index === 0 ? 'var(--warning)' : 'inherit' }}>
-                      {student.total_score}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '1rem' }}>
+            {leaderboardData.map((student, index) => (
+              <div 
+                key={student.id} 
+                style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  padding: '1.25rem', 
+                  background: index === 0 ? 'rgba(245, 158, 11, 0.08)' : 'transparent',
+                  border: index === 0 ? '1px solid rgba(245, 158, 11, 0.3)' : '1px solid var(--border-light)',
+                  borderRadius: '12px',
+                  gap: '1rem',
+                  transition: 'transform 0.2s ease, background 0.2s ease'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: '40px' }}>
+                  {index === 0 ? <Medal size={28} color="var(--warning)" /> : 
+                   index === 1 ? <Medal size={28} color="#e5e7eb" /> : 
+                   index === 2 ? <Medal size={28} color="#b45309" /> : 
+                   <span style={{ fontWeight: 600, color: 'var(--text-secondary)', fontSize: '1.1rem' }}>#{index + 1}</span>}
+                </div>
+                
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <h3 style={{ margin: '0 0 0.25rem 0', fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {student.student_name}
+                  </h3>
+                  <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {student.project_name}
+                  </p>
+                </div>
+
+                <div style={{ textAlign: 'right' }}>
+                  <span style={{ fontWeight: 700, fontSize: '1.5rem', color: index === 0 ? 'var(--warning)' : 'var(--text-primary)' }}>
+                    {student.total_score}
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </div>
