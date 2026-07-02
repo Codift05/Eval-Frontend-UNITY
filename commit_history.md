@@ -7,3 +7,4 @@
 - Create Dashboard layout
 - Design ScoreBar component
 - Implement mock data structure
+- Integrate mock data with Dashboard
